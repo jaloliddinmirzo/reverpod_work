@@ -10,6 +10,8 @@ import 'package:reverpod_work/screens/state_provider.dart';
 import 'package:reverpod_work/screens/stream_provider.dart';
 
 class HomeScreen extends StatelessWidget {
+  const HomeScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

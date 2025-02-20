@@ -14,6 +14,8 @@ class CounterModel extends ChangeNotifier {
 final counterChangeNotifierProvider = ChangeNotifierProvider<CounterModel>((ref) => CounterModel());
 
 class ChangeNotifierProviderExample extends ConsumerWidget {
+  const ChangeNotifierProviderExample({super.key});
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final counter = ref.watch(counterChangeNotifierProvider);

@@ -4,6 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 final counterProvider = StateProvider<int>((ref) => 0);
 
 class StateProviderExample extends ConsumerWidget {
+  const StateProviderExample({super.key});
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final counter = ref.watch(counterProvider);

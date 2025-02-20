@@ -9,6 +9,8 @@ final autoDisposeProviderExample = Provider.autoDispose<int>((ref) {
 });
 
 class AutoDisposeProviderExample extends ConsumerWidget {
+  const AutoDisposeProviderExample({super.key});
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final value = ref.watch(autoDisposeProviderExample);

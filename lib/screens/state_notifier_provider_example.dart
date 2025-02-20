@@ -11,6 +11,8 @@ class CounterNotifier extends StateNotifier<int> {
 final counterNotifierProvider = StateNotifierProvider<CounterNotifier, int>((ref) => CounterNotifier());
 
 class StateNotifierProviderExample extends ConsumerWidget {
+  const StateNotifierProviderExample({super.key});
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final counter = ref.watch(counterNotifierProvider);

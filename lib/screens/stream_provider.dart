@@ -10,6 +10,8 @@ final streamProviderExample = StreamProvider<int>((ref) async* {
 });
 
 class StreamProviderExample extends ConsumerWidget {
+  const StreamProviderExample({super.key});
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final asyncValue = ref.watch(streamProviderExample);

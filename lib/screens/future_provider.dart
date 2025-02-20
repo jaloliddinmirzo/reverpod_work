@@ -7,6 +7,8 @@ final futureProviderExample = FutureProvider<String>((ref) async {
 });
 
 class FutureProviderExample extends ConsumerWidget {
+  const FutureProviderExample({super.key});
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final asyncValue = ref.watch(futureProviderExample);

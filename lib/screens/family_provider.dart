@@ -6,6 +6,8 @@ final familyProviderExample = Provider.family<String, String>((ref, name) {
 });
 
 class FamilyProviderExample extends ConsumerWidget {
+  const FamilyProviderExample({super.key});
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final message = ref.watch(familyProviderExample('John'));
